@@ -7,7 +7,7 @@ import WeddingParty from "../../components/main/WeddingParty";
 const BrideGroomsPage = () => {
   return (
     <BaseLayout>
-      <BasePage indexPage metaTitle="Portfolio - Luis Ruiz">
+      <BasePage indexPage metaTitle="Ruiz Be Mine - Wedding Party">
         <PageTitle
           pageTitle={"Wedding Party"}
           pagesub={"Bridesmaid & Groomsman"}

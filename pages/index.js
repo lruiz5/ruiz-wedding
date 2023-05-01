@@ -19,7 +19,7 @@ const HomePage = () => {
   return (
     <div>
       <BaseLayout>
-        <BasePage indexPage metaTitle="Portfolio - Luis Ruiz">
+        <BasePage indexPage metaTitle="Ruiz Be Mine - Home">
           <Hero />
           <WeddingDate />
           <CoupleSection id={"couples-section"} />

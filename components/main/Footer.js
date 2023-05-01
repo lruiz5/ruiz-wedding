@@ -30,10 +30,10 @@ const Footer = (props) => {
                   <Link href="/galleria">Galleria</Link>
                 </li>
                 <li>
-                  <Link href="/portfolio-grid">Portfolio</Link>
+                  <Link href="/accomodation">Travel</Link>
                 </li>
                 <li>
-                  <Link href="/blog">Blog</Link>
+                  <Link href="/blog">Things</Link>
                 </li>
               </ul>
             </div>
