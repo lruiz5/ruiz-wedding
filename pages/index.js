@@ -10,8 +10,6 @@ import VideoSection from "../components/main/VideoSection";
 import StorySection from "../components/main/StorySection";
 import PortfolioSection from "../components/main/PortfolioSection";
 import EventSection from "../components/main/EventSection";
-
-import PartnerSection from "../components/PartnerSection";
 import BlogSection from "../components/BlogSection/BlogSection";
 import vimg from "/public/images/cta2.jpg";
 
@@ -26,7 +24,6 @@ const HomePage = () => {
           <VideoSection vimg={vimg} />
           <StorySection />
           <PortfolioSection prClass={"pb-0"} id={"galleria-section"} />
-          <PartnerSection />
           <EventSection />
           <BlogSection />
         </BasePage>
