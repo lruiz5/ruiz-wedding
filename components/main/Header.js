@@ -31,7 +31,7 @@ const Header = (props) => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-6 col-6 d-lg-block d-none">
-                <div className="social-info">
+                {/* <div className="social-info">
                   <ul>
                     <li>
                       <Link href="/">
@@ -54,7 +54,7 @@ const Header = (props) => {
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div className="col-md-6 col-6 d-lg-none dl-block">
                 <div className="navbar-header">
@@ -85,7 +85,7 @@ const Header = (props) => {
                       <Link
                         onClick={ClickHandler}
                         className="navbar-brand"
-                        href="/home"
+                        href="/"
                       >
                         <img src="/images/logo.svg" alt="" />
                       </Link>
@@ -170,7 +170,7 @@ const Header = (props) => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-2 col-2">
-                <div className="header-right">
+                {/* <div className="header-right">
                   <div className="header-search-form-wrapper">
                     <div className="cart-search-contact">
                       <button
@@ -275,7 +275,7 @@ const Header = (props) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
