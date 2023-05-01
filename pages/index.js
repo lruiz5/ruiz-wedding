@@ -1,0 +1,37 @@
+import React from "react";
+
+import BaseLayout from "../components/shared/BaseLayout";
+import BasePage from "../components/shared/BasePage";
+
+import Hero from "../components/main/Hero";
+import WeddingDate from "../components/main/WeddingDate";
+import CoupleSection from "../components/main/CoupleSection";
+import VideoSection from "../components/main/VideoSection";
+import StorySection from "../components/main/StorySection";
+import PortfolioSection from "../components/main/PortfolioSection";
+import EventSection from "../components/main/EventSection";
+
+import PartnerSection from "../components/PartnerSection";
+import BlogSection from "../components/BlogSection/BlogSection";
+import vimg from "/public/images/cta2.jpg";
+
+const HomePage = () => {
+  return (
+    <div>
+      <BaseLayout>
+        <BasePage indexPage metaTitle="Portfolio - Luis Ruiz">
+          <Hero />
+          <WeddingDate />
+          <CoupleSection id={"couples-section"} />
+          <VideoSection vimg={vimg} />
+          <StorySection />
+          <PortfolioSection prClass={"pb-0"} id={"galleria-section"} />
+          <PartnerSection />
+          <EventSection />
+          <BlogSection />
+        </BasePage>
+      </BaseLayout>
+    </div>
+  );
+};
+export default HomePage;
