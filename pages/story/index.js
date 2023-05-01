@@ -6,7 +6,7 @@ import StorySection from "../../components/StorySection";
 const StoryPage = () => {
   return (
     <BaseLayout>
-      <BasePage indexPage metaTitle="Portfolio - Luis Ruiz">
+      <BasePage indexPage metaTitle="Ruiz Be Mine - Our Story">
         <PageTitle pageTitle={"Our Story"} pagesub={"Story"} />
         <StorySection />
       </BasePage>

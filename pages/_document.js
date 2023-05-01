@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
+          <link rel="icon" href="/images/favicon.png" />
         </Head>
         <body>
           <Main />
