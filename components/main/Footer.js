@@ -38,7 +38,7 @@ const Footer = (props) => {
               </ul>
             </div>
           </div>
-          <div className="col-12">
+          {/* <div className="col-12">
             <div className="link-widget">
               <ul>
                 <li>
@@ -68,7 +68,7 @@ const Footer = (props) => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="col-12">
             <div className="copyright">
               <p>© Copyright {year} | Ruiz Be Mine | All rights reserved.</p>
