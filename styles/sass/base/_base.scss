@@ -484,6 +484,9 @@ ul.smothscroll a:hover {
     border: 0;
 }
 
-.col-lg-2half{
-    width: 20%
+@media (min-width: 992px){
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 20%;
+}
 }
