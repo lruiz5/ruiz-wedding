@@ -92,7 +92,7 @@ const BrideGrooms = (props) => {
           <div className="wpo-team-wrap">
             <div className="row">
               {Bridesmaids.slice(0, 10).map((bridesmaid, tm) => (
-                <div className="col-lg-2half col-md-6 col-sm-6 col-12" key={tm}>
+                <div className="col-lg-3 col-md-6 col-sm-6 col-12" key={tm}>
                   <div className="wpo-team-item">
                     <div className="wpo-team-img">
                       <Image src={bridesmaid.tImg} alt="" />
