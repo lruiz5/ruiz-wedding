@@ -745,6 +745,7 @@
 				position: relative;
 				overflow: hidden;
 				border-radius: 50%;
+				
 
 				@media(max-width:1399px) {
 					width: 220px;
@@ -775,13 +776,14 @@
 
 				}
 			}
-
-			&:hover {
-				.wpo-team-img {
-					img {
-						transform: scale(1.2);
+			@media(min-width:832px) {
+				&:hover {
+					.wpo-team-img {
+						img {
+							transform: scale(1.2);
+						}
 					}
-				}
+				}	
 			}
 
 			.wpo-team-text {
