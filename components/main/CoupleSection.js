@@ -29,7 +29,7 @@ const CoupleSection = (props) => {
                     Urna orci auctor vitae nisl. Erat fringilla pellentesque
                     amet tempus. Commodo mi vitae, sagittis blandit.
                   </p>
-                  <div className="social">
+                  {/* <div className="social">
                     <ul>
                       <li>
                         <Link href="/home3">
@@ -47,7 +47,7 @@ const CoupleSection = (props) => {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ const CoupleSection = (props) => {
                     Urna orci auctor vitae nisl. Erat fringilla pellentesque
                     amet tempus. Commodo mi vitae, sagittis blandit.
                   </p>
-                  <div className="social">
+                  {/*  <div className="social">
                     <ul>
                       <li>
                         <Link href="/home3">
@@ -88,7 +88,7 @@ const CoupleSection = (props) => {
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

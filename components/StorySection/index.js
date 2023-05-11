@@ -41,10 +41,12 @@ const StorySection = (props) => {
       id="story"
     >
       <div className="container-fluid">
-        <SectionTitle
-          subTitle={"Our Story"}
-          MainTitle={"Our Sweet love story"}
-        />
+        {!props.mainComponent && (
+          <SectionTitle
+            subTitle={"Our Story"}
+            MainTitle={"Our Sweet love story"}
+          />
+        )}
         <div className="wpo-story-wrap">
           {Storys.map((story, st) => (
             <div className="wpo-story-item" key={st}>

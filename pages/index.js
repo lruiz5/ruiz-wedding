@@ -22,8 +22,12 @@ const HomePage = () => {
           <WeddingDate />
           <CoupleSection id={"couples-section"} />
           <VideoSection vimg={vimg} />
-          <StorySection />
-          <PortfolioSection prClass={"pb-0"} id={"galleria-section"} />
+          <StorySection mainComponent={false} />
+          <PortfolioSection
+            mainComponent={false}
+            prClass={"pb-0"}
+            id={"galleria-section"}
+          />
           <EventSection />
           <BlogSection />
         </BasePage>

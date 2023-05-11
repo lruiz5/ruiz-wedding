@@ -8,7 +8,7 @@ const StoryPage = () => {
     <BaseLayout>
       <BasePage indexPage metaTitle="Ruiz Be Mine - Our Story">
         <PageTitle pageTitle={"Our Story"} pagesub={"Story"} />
-        <StorySection />
+        <StorySection mainComponent={true} />
       </BasePage>
     </BaseLayout>
   );

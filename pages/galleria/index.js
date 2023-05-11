@@ -8,8 +8,8 @@ const PortfolioGridPage = (props) => {
   return (
     <BaseLayout>
       <BasePage indexPage metaTitle="Ruiz Be Mine - Galleria">
-        <PageTitle pageTitle={"Our Love Galleria"} pagesub={"Portfolio"} />
-        <PortfolioSection pClass={"tb-padding"} />
+        <PageTitle pageTitle={"Sweet Memories"} pagesub={"Portfolio"} />
+        <PortfolioSection mainComponent={true} pClass={"tb-padding"} />
         <PartnerSection pClass={"pb-120"} />
       </BasePage>
     </BaseLayout>
