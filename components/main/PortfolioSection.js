@@ -36,10 +36,12 @@ const PortfolioSection = (props) => {
       id="gallery"
     >
       <div className="container">
-        <div className="wpo-section-title">
-          <h4>Sweet Memories</h4>
-          <h2>Our Captured Moments</h2>
-        </div>
+        {!props.mainComponent && (
+          <div className="wpo-section-title">
+            <h4>Sweet Memories</h4>
+            <h2>Our Captured Moments</h2>
+          </div>
+        )}
         <div className="sortable-gallery">
           <div className="gallery-filters"></div>
           <div className="row">
