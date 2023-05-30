@@ -7,25 +7,25 @@ const Portfolios = [
     Pimg: "/images/portfolio/new-39.jpg",
   },
   {
-    Pimg: "/images/portfolio/new-57.webp",
+    Pimg: "/images/portfolio/new-57-min.webp",
   },
   {
-    Pimg: "/images/portfolio/new-31.webp",
+    Pimg: "/images/portfolio/new-31-min.webp",
   },
   {
-    Pimg: "/images/portfolio/new-60.webp",
+    Pimg: "/images/portfolio/new-60-min.webp",
   },
   {
-    Pimg: "/images/portfolio/new-9.webp",
+    Pimg: "/images/portfolio/new-9-min.webp",
   },
   {
-    Pimg: "/images/portfolio/new-63.webp",
+    Pimg: "/images/portfolio/new-63-min.webp",
   },
   {
-    Pimg: "/images/portfolio/new-61.webp",
+    Pimg: "/images/portfolio/new-61-min.webp",
   },
   {
-    Pimg: "/images/portfolio/new-47.webp",
+    Pimg: "/images/portfolio/new-47-min.webp",
   },
 ];
 
