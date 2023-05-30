@@ -22,7 +22,7 @@ const Hero = () => {
               <div
                 className="slide-inner slide-bg-image"
                 style={{
-                  backgroundImage: `url(${"/images/couple/us.png"})`,
+                  backgroundImage: `url(${"/images/slider/slider-1.webp"})`,
                 }}
               ></div>
             </SwiperSlide>
@@ -30,7 +30,7 @@ const Hero = () => {
               <div
                 className="slide-inner slide-bg-image"
                 style={{
-                  backgroundImage: `url(${"/images/slider/slide-6.jpg"})`,
+                  backgroundImage: `url(${"/images/slider/slider-2.png"})`,
                 }}
               ></div>
             </SwiperSlide>
@@ -38,7 +38,7 @@ const Hero = () => {
               <div
                 className="slide-inner slide-bg-image"
                 style={{
-                  backgroundImage: `url(${"/images/slider/slide-7.jpg"})`,
+                  backgroundImage: `url(${"/images/slider/slider-3.webp"})`,
                 }}
               ></div>
             </SwiperSlide>
@@ -46,7 +46,7 @@ const Hero = () => {
               <div
                 className="slide-inner slide-bg-image"
                 style={{
-                  backgroundImage: `url(${"/images/slider/slide-8.jpg"})`,
+                  backgroundImage: `url(${"/images/slider/slider-4.webp"})`,
                 }}
               ></div>
             </SwiperSlide>

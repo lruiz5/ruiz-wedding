@@ -4,28 +4,28 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 const Portfolios = [
   {
-    Pimg: "/images/portfolio/10.jpg",
+    Pimg: "/images/portfolio/new-39.jpg",
   },
   {
-    Pimg: "/images/portfolio/8.jpg",
+    Pimg: "/images/portfolio/new-57.webp",
   },
   {
-    Pimg: "/images/portfolio/6.jpg",
+    Pimg: "/images/portfolio/new-31.webp",
   },
   {
-    Pimg: "/images/portfolio/5.jpg",
+    Pimg: "/images/portfolio/new-60.webp",
   },
   {
-    Pimg: "/images/portfolio/9.jpg",
+    Pimg: "/images/portfolio/new-9.webp",
   },
   {
-    Pimg: "/images/portfolio/7.jpg",
+    Pimg: "/images/portfolio/new-63.webp",
   },
   {
-    Pimg: "/images/portfolio/11.jpg",
+    Pimg: "/images/portfolio/new-61.webp",
   },
   {
-    Pimg: "/images/portfolio/23.jpg",
+    Pimg: "/images/portfolio/new-47.webp",
   },
 ];
 
