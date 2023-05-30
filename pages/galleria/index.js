@@ -1,7 +1,7 @@
 import BaseLayout from "../../components/shared/BaseLayout";
 import BasePage from "../../components/shared/BasePage";
 import PageTitle from "../../components/pagetitle/PageTitle";
-import PortfolioSection from "../../components/PortfolioSection";
+import PortfolioSection from "../../components/main/PortfolioSection";
 import PartnerSection from "../../components/PartnerSection";
 
 const PortfolioGridPage = (props) => {
