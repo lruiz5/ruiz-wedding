@@ -161,30 +161,41 @@
 	.couple-area {
 		.couple-item {
 			.couple-img {
-				margin-bottom: 30px;
+				width: 270px;
+				height: 270px;
+				margin: 0 auto;
 				position: relative;
-				text-align: center;
+				overflow: hidden;
+				border-radius: 50%;
+				
 
-				@media(max-width:991px) {
-					margin-bottom: 10px;
+				@media(max-width:1399px) {
+					width: 220px;
+					height: 220px;
 				}
 
-				@media(max-width:767px) {
-					margin-bottom: 0px;
-				}
-
-				&:after {
+				&:before {
 					position: absolute;
-					left: -2px;
-					top: -2px;
-					width: 102%;
-					height: 102%;
+					left: 10px;
+					top: 10px;
+					width: 250px;
+					height: 250px;
+					border-radius: 50%;
 					content: "";
-					background: url(/images/couple/mask.jpg) no-repeat center center;
-					z-index: 9;
-					mix-blend-mode: screen;
-					background-size: 100%;
-					background-position: center;
+					border: 1px solid transparentize($theme-primary-color, .2);
+					z-index: 1;
+
+					@media(max-width:1399px) {
+						width: 200px;
+						height: 200px;
+					}
+				}
+
+				img {
+					border-radius: 50%;
+					transform: scale(1);
+					transition: all .3s;
+
 				}
 			}
 

@@ -108,8 +108,8 @@ const Header = (props) => {
                           </Link>
                         </li>
                         <li>
-                          <Link onClick={ClickHandler} href="/accomodation">
-                            Other
+                          <Link onClick={ClickHandler} href="/things-to-do">
+                            Things To Do
                           </Link>
                         </li>
                       </ul>
@@ -130,7 +130,7 @@ const Header = (props) => {
                             Registry
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link onClick={ClickHandler} href="/blog-fullwidth">
                             Blog fullwidth
                           </Link>
@@ -163,7 +163,7 @@ const Header = (props) => {
                               </Link>
                             </li>
                           </ul>
-                        </li>
+                        </li> */}
                       </ul>
                     </li>
                   </ul>

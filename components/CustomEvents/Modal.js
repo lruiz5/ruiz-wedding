@@ -20,7 +20,7 @@ export default function LocationMap() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Show On Map</Button>
+      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -36,10 +36,7 @@ export default function LocationMap() {
           </button>
           <div className="modalBody modal-body">
             <div className="modalBody modal-body">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.052785623464!2d-120.6178853243846!3d35.74950732622067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80eccc0ece0ce11b%3A0x7c0070b123536f30!2sVilla%20San-Juliette%20Vineyard%20%26%20Winery!5e0!3m2!1sen!2sus!4v1685662023982!5m2!1sen!2sus"
-                loading="lazy"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"></iframe>
             </div>
           </div>
         </Box>

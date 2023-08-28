@@ -1,17 +1,13 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import coupleImg1 from "/public/images/couple/img-1.png";
-import coupleImg2 from "/public/images/couple/img-2.png";
 import coupleImg3 from "/public/images/couple/shape.png";
 
-import bride from "/public/images/couple/bride.png";
-import groom from "/public/images/couple/groom.jpg";
-
 const CoupleSection = (props) => {
+  const { info, cClass } = props;
+
   return (
     <section
-      className={`wpo-couple-section section-padding ${props.cClass}`}
+      className={`wpo-couple-section section-padding ${cClass}`}
       id="couple"
     >
       <div className="container">
@@ -20,15 +16,16 @@ const CoupleSection = (props) => {
             <div className="col col-md-5 col-12">
               <div className="couple-item">
                 <div className="couple-img">
-                  <Image src={bride} alt="bride and groom" />
+                  <Image
+                    src={info.bride_img.filename}
+                    alt={info.bride_img.id}
+                    width={300}
+                    height={300}
+                  />
                 </div>
                 <div className="couple-text">
-                  <h3>Meghan P Bezak</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Urna orci auctor vitae nisl. Erat fringilla pellentesque
-                    amet tempus. Commodo mi vitae, sagittis blandit.
-                  </p>
+                  <h3>{info.bride_full_name}</h3>
+                  <p>{info.about_bride}</p>
                   {/* <div className="social">
                     <ul>
                       <li>
@@ -61,15 +58,16 @@ const CoupleSection = (props) => {
             <div className="col col-md-5 col-12">
               <div className="couple-item">
                 <div className="couple-img">
-                  <Image src={groom} alt="" />
+                  <Image
+                    src={info.groom_img.filename}
+                    alt={info.groom_img.id}
+                    width={300}
+                    height={300}
+                  />
                 </div>
                 <div className="couple-text">
-                  <h3>Luis-Angel Ruiz</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Urna orci auctor vitae nisl. Erat fringilla pellentesque
-                    amet tempus. Commodo mi vitae, sagittis blandit.
-                  </p>
+                  <h3>{info.groom_full_name}</h3>
+                  <p>{info.about_groom}</p>
                   {/*  <div className="social">
                     <ul>
                       <li>

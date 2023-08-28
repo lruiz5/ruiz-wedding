@@ -2,34 +2,9 @@ import React from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
-const Portfolios = [
-  {
-    Pimg: "/images/portfolio/new-39.jpg",
-  },
-  {
-    Pimg: "/images/portfolio/new-57-min.webp",
-  },
-  {
-    Pimg: "/images/portfolio/new-31-min.webp",
-  },
-  {
-    Pimg: "/images/portfolio/new-60-min.webp",
-  },
-  {
-    Pimg: "/images/portfolio/new-9-min.webp",
-  },
-  {
-    Pimg: "/images/portfolio/new-63-min.webp",
-  },
-  {
-    Pimg: "/images/portfolio/new-61-min.webp",
-  },
-  {
-    Pimg: "/images/portfolio/new-47-min.webp",
-  },
-];
-
 const PortfolioSection = (props) => {
+  const { portfolio } = props;
+
   return (
     <section
       className={`wpo-portfolio-section-s2 section-padding ${props.prClass}`}
@@ -52,16 +27,20 @@ const PortfolioSection = (props) => {
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}
                   >
                     <Masonry columnsCount={4} gutter="30px">
-                      {Portfolios.map((image, i) => (
+                      {portfolio.map((image, i) => (
                         <div className="grid" key={i}>
                           <Item
-                            original={image.Pimg}
-                            thumbnail={image.Pimg}
+                            original={image.filename}
+                            thumbnail={image.filename}
                             width="600"
                             height="700"
                           >
                             {({ ref, open }) => (
-                              <img ref={ref} onClick={open} src={image.Pimg} />
+                              <img
+                                ref={ref}
+                                onClick={open}
+                                src={image.filename}
+                              />
                             )}
                           </Item>
                         </div>

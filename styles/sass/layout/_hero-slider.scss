@@ -1288,8 +1288,8 @@ wpo-hero-slider-s4
 
 	.slide-inner {
 		margin: 0 auto;
-		width: 90%;
-		left: 5%;
+		width: 100%;
+		left: 0%;
 		top: 0;
 
 		&:before {
@@ -1303,7 +1303,7 @@ wpo-hero-slider-s4
 			width: 100%;
 			height: 100%;
 			content: "";
-			background: url(/images/slider/bg-11.jpg) no-repeat center center;
+			background: url(/images/slider/cloud-fade.jpg) no-repeat center center;
 			z-index: 999;
 			mix-blend-mode: screen;
 			background-size: cover;
