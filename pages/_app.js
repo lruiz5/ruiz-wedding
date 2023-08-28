@@ -16,28 +16,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "photoswipe/dist/photoswipe.css";
 import "../styles/sass/style.scss";
 
-import { storyblokInit, apiPlugin } from "@storyblok/react";
-import Feature from "../components/Feature";
-import Grid from "../components/Grid";
-import Page from "../components/Page";
-import Teaser from "../components/Teaser";
-
-const components = {
-  feature: Feature,
-  grid: Grid,
-  teaser: Teaser,
-  page: Page,
-};
-
-storyblokInit({
-  accessToken: process.env.NEXT_PUBLIC_STORYBLOK_TOKEN,
-  use: [apiPlugin],
-  apiOptions: {
-    region: "us",
-  },
-  components,
-});
-
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
