@@ -6,6 +6,8 @@ import { Slide } from "react-awesome-reveal";
 import Image from "next/image";
 
 const WeddingDate = (props) => {
+  const { info } = props;
+
   return (
     <section className={`wpo-wedding-date ${props.dtClass}`}>
       <div className="container">
@@ -14,16 +16,16 @@ const WeddingDate = (props) => {
             <span className="shape-1">
               <Image src={sImg1} alt="" />
             </span>
-            Meghan & Luis
+            {info.bride_name} & {info.groom_name}
             <span className="shape-2">
               <Image src={sImg2} alt="" />{" "}
             </span>
           </h2>
-          <p>July 29,2024</p>
+          <p>{info.date}</p>
           <div className="row">
             <div className="col col-xs-12">
               <div className="clock-grids">
-                <TimeCountDown />
+                <TimeCountDown countdownDate={new Date(info.date)} />
               </div>
             </div>
           </div>

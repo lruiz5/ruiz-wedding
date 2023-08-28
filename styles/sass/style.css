@@ -6226,6 +6226,7 @@ wpo-hero-slider-s4
   border: 1px solid rgba(212, 176, 165, 0.8);
   z-index: 1;
 }
+
 @media (max-width: 1399px) {
   .wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img:before {
     width: 200px;

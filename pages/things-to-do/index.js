@@ -1,18 +1,21 @@
 import BaseLayout from "../../components/shared/BaseLayout";
 import BasePage from "../../components/shared/BasePage";
 import PageTitle from "../../components/pagetitle/PageTitle";
-import WeddingDate from "../../components/main/WeddingDate";
-import EventSection from "../../components/main/EventSection";
+import CustomEventSection from "../../components/CustomEvents";
 import PartnerSection from "../../components/PartnerSection";
-import LodgingSection from "../../components/main/LodgingSection/LodgingSection";
 
-const AccomodationPage = () => {
+const ThingsToDoPage = () => {
   return (
     <BaseLayout>
       <BasePage indexPage metaTitle="Ruiz Be Mine - Accomodation">
-        <LodgingSection />
+        <PageTitle
+          pageTitle={"Things To Do"}
+          pagesub={"Activities In The Area"}
+        />
+        <CustomEventSection />
+        <PartnerSection pClass={"section-padding"} />
       </BasePage>
     </BaseLayout>
   );
 };
-export default AccomodationPage;
+export default ThingsToDoPage;
