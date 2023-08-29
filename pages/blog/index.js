@@ -16,7 +16,7 @@ const BlogSingle = (props) => {
 
   return (
     <BaseLayout>
-      <BasePage indexPage metaTitle="Ruiz Be Mine - Things">
+      <BasePage indexPage metaTitle="Ruiz Be Mine - Blogs">
         <PageTitle pageTitle="Latest News" pagesub="blog" />
         <BlogList />
       </BasePage>
