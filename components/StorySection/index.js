@@ -1,38 +1,7 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import sImg1 from "/public/images/story/1.jpg";
-import sImg2 from "/public/images/story/2.jpg";
-import sImg3 from "/public/images/story/3.jpg";
 import shape from "/public/images/story/shape.png";
 import Image from "next/image";
-
-import date from "/public/images/story/date.png";
-import date2 from "/public/images/story/date2.png";
-import met from "/public/images/story/met.png";
-
-const Storys = [
-  {
-    sImg: met,
-    title: "First Time We Meet",
-    date: "Feb 2019",
-    description:
-      "Lorem ipsum dolor sit amet, constetur adicng elit. Ultricies nulla mi tempus mcorper for praesent. Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. Malesuada enim ac amurna tempor vel duis.",
-  },
-  {
-    sImg: date,
-    title: "Our First Date",
-    date: "Sep 2019",
-    description:
-      "Lorem ipsum dolor sit amet, constetur adicng elit. Ultricies nulla mi tempus mcorper for praesent. Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. Malesuada enim ac amurna tempor vel duis.",
-  },
-  {
-    sImg: date2,
-    title: "She Said Yes",
-    date: "Mar 2023",
-    description:
-      "Lorem ipsum dolor sit amet, constetur adicng elit. Ultricies nulla mi tempus mcorper for praesent. Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. Malesuada enim ac amurna tempor vel duis.",
-  },
-];
 
 const StorySection = (props) => {
   return (

@@ -8,9 +8,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { PersistGate } from "redux-persist/integration/react";
-import { store, persistor } from "../store/index";
+import { store } from "../store";
 import { Provider } from "react-redux";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "photoswipe/dist/photoswipe.css";
@@ -19,10 +19,8 @@ import "../styles/sass/style.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <Component {...pageProps} />
-        <ToastContainer />
-      </PersistGate>
+      <Component {...pageProps} />
+      <ToastContainer />
     </Provider>
   );
 }

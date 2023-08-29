@@ -1,9 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import coupleImg3 from "/public/images/couple/shape.png";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchCouple } from "../../slices/coupleSlice";
+import { useEffect } from "react";
+import Shimmer from "../../components/Shimmer";
 
 const CoupleSection = (props) => {
-  const { info, cClass } = props;
+  const { cClass } = props;
+  const { couple, error, loading } = useSelector((state) => state.couple);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCouple());
+  }, []);
+
+  if (!couple.bride_img) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <section
@@ -16,16 +30,20 @@ const CoupleSection = (props) => {
             <div className="col col-md-5 col-12">
               <div className="couple-item">
                 <div className="couple-img">
-                  <Image
-                    src={info.bride_img.filename}
-                    alt={info.bride_img.id}
-                    width={300}
-                    height={300}
-                  />
+                  {!loading && error === "" && (
+                    <Image
+                      src={couple.bride_img.filename}
+                      alt={couple.bride_img.id}
+                      width={300}
+                      height={300}
+                      loading="lazy"
+                      placeholder={<Shimmer />}
+                    />
+                  )}
                 </div>
                 <div className="couple-text">
-                  <h3>{info.bride_full_name}</h3>
-                  <p>{info.about_bride}</p>
+                  <h3>{couple.bride_full_name}</h3>
+                  <p>{couple.about_bride}</p>
                   {/* <div className="social">
                     <ul>
                       <li>
@@ -58,16 +76,20 @@ const CoupleSection = (props) => {
             <div className="col col-md-5 col-12">
               <div className="couple-item">
                 <div className="couple-img">
-                  <Image
-                    src={info.groom_img.filename}
-                    alt={info.groom_img.id}
-                    width={300}
-                    height={300}
-                  />
+                  {!loading && (
+                    <Image
+                      loading="lazy"
+                      placeholder={<Shimmer />}
+                      src={couple.groom_img.filename}
+                      alt={couple.groom_img.id}
+                      width={300}
+                      height={300}
+                    />
+                  )}
                 </div>
                 <div className="couple-text">
-                  <h3>{info.groom_full_name}</h3>
-                  <p>{info.about_groom}</p>
+                  <h3>{couple.groom_full_name}</h3>
+                  <p>{couple.about_groom}</p>
                   {/*  <div className="social">
                     <ul>
                       <li>

@@ -2,17 +2,25 @@ import React from "react";
 import SectionTitle from "../../SectionTitle";
 import LocationMap from "./Modal";
 import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchEvents } from "../../../slices/eventSlice";
+import { useEffect } from "react";
 
-const EventSection = (props) => {
-  const { info } = props;
+const EventSection = () => {
+  const { events, error, loading } = useSelector((state) => state.event);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchEvents());
+  }, []);
 
   return (
     <section className="wpo-event-section section-padding pb-0" id="event">
       <div className="container">
-        <SectionTitle subTitle={"When & Where"} MainTitle={"When & Where"} />
+        <SectionTitle subTitle={"When & Where"} MainTitle={"Event Details"} />
         <div className="wpo-event-wrap">
           <div className="row">
-            {info.map((event, eitem) => (
+            {events.map((event, eitem) => (
               <div className="col col-lg-4 col-md-6 col-12" key={eitem}>
                 <div className="wpo-event-item">
                   <div className="wpo-event-img">
