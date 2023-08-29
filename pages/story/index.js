@@ -1,7 +1,7 @@
 import BaseLayout from "../../components/shared/BaseLayout";
 import BasePage from "../../components/shared/BasePage";
 import PageTitle from "../../components/pagetitle/PageTitle";
-import StorySection from "../../components/StorySection";
+import StorySection from "../../components/main/StorySection";
 
 const StoryPage = () => {
   return (

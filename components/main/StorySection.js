@@ -2,28 +2,40 @@ import React from "react";
 import SectionTitle from "../SectionTitle";
 import shape from "/public/images/story/shape.png";
 import Image from "next/image";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchStory } from "../../slices/storySlice";
+import { useEffect } from "react";
 
 const StorySection = (props) => {
-  const { stories } = props;
+  const { story, error, loading } = useSelector((state) => state.story);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchStory());
+  }, []);
 
   return (
     <section
-      className={`wpo-story-section section-padding ${props.stClass}`}
+      className={`wpo-story-section ${
+        !props.mainComponent && "section-padding"
+      } ${props.stClass}`}
       id="story"
     >
       <div className="container-fluid">
-        <SectionTitle
-          subTitle={"Our Story"}
-          MainTitle={"Our Sweet love story"}
-        />
+        {!props.mainComponent && (
+          <SectionTitle
+            subTitle={"Our Story"}
+            MainTitle={"Our Sweet love story"}
+          />
+        )}
         <div className="wpo-story-wrap">
-          {stories.map((story, st) => (
+          {story.map((chapter, st) => (
             <div className="wpo-story-item" key={st}>
               <div className="wpo-story-img-wrap">
                 <div className="wpo-story-img">
                   <Image
-                    src={story.content.image.filename}
-                    alt={story.content.image.id}
+                    src={chapter.content.image.filename}
+                    alt={chapter.content.image.id}
                     width={300}
                     height={300}
                   />
@@ -34,9 +46,9 @@ const StorySection = (props) => {
               </div>
               <div className="wpo-story-content">
                 <div className="wpo-story-content-inner">
-                  <h2>{story.content.title}</h2>
-                  <span>{story.content.date}</span>
-                  <p>{story.content.description}</p>
+                  <h2>{chapter.content.title}</h2>
+                  <span>{chapter.content.date}</span>
+                  <p>{chapter.content.description}</p>
                 </div>
               </div>
             </div>

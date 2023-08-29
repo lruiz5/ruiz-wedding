@@ -1,9 +1,17 @@
 import React from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Gallery, Item } from "react-photoswipe-gallery";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchPortfolio } from "../../slices/portfolioSlice";
+import { useEffect } from "react";
 
 const PortfolioSection = (props) => {
-  const { portfolio } = props;
+  const { portfolio, error, loading } = useSelector((state) => state.portfolio);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchPortfolio());
+  }, []);
 
   return (
     <section
