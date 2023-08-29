@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { totalPrice } from "../../utils";
-import { connect } from "react-redux";
-import { removeFromCart } from "../../store/actions/action";
 
 const Header = (props) => {
   const [menuActive, setMenuState] = useState(false);
@@ -501,9 +499,7 @@ const Header = (props) => {
                                 </span>
                                 <span className="mini-cart-item-quantity">
                                   <button
-                                    onClick={() =>
-                                      props.removeFromCart(catItem.id)
-                                    }
+                                    onClick={() => console.log(catItem.id)}
                                     className="btn btn-sm btn-danger"
                                   >
                                     <i className="ti-close"></i>
@@ -546,9 +542,4 @@ const Header = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    carts: state.cartList.cart,
-  };
-};
-export default connect(mapStateToProps, { removeFromCart })(Header);
+export default Header;
